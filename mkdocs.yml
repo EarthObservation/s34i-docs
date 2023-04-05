@@ -1,0 +1,124 @@
+site_name: Docs
+copyright: 'Copyright &copy; 2023 S34I - WP3 Team'
+
+theme: 
+  name: material
+  logo: assets/logos/logo.png
+  favicon: assets/logos/favicon.png
+  custom_dir: overrides
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+      primary: teal
+      accent: orange
+    - scheme: slate 
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode    
+      primary: teal
+      accent: orange
+  features:
+  - announce.dismiss
+  - navigation.top
+  - navigation.sections
+  - navigation.indexes
+  - navigation.tabs
+  - content.code.copy
+
+extra_css:
+  - assets/stylesheets/extra.css
+plugins:
+  - search
+
+
+nav:
+  - Home: 
+    - index.md
+    - Getting Started: home/getting_started.md
+    - Support: home/support.md
+    - Licence: home/licence.md
+    - Contribition: 
+      - home/contribution/index.md
+      - Report a Bug: home/contribution/report_bug.md
+      - Suggest Improvements: home/contribution/improvements.md
+      - Contribute Docs: home/contribution/contribute_docs.md
+
+  - GIS Platform:
+    - gis_platform/index.md
+    - Features: gis_platform/features.md
+    - Tools: gis_platform/tools.md
+    - Services: gis_platform/services.md
+    - Changelog: 
+      - gis_platform/changelog/index.md
+
+  - Data Catalogue:
+    - data_catalogue/index.md
+    - Instructions: data_catalogue/instructions.md
+    - Importance: data_catalogue/metadata_importance.md
+
+  - Data Submission:
+    - data_submission/index.md
+    - Metadata: data_submission/metadata.md
+    - How to submit: data_submission/submission.md
+
+  - Reference:
+    - reference/index.md
+    - Admonitions: reference/admonitions.md
+    - Annotations: reference/annotations.md
+    - Buttons: reference/buttons.md
+    - Code blocks: reference/code-blocks.md
+    - Content tabs: reference/content-tabs.md
+    - Data tables: reference/data-tables.md
+    - Diagrams: reference/diagrams.md
+    - Footnotes: reference/footnotes.md
+    - Formatting: reference/formatting.md
+    - Grids: reference/grids.md
+    - Icons, Emojis: reference/icons-emojis.md
+    - Images: reference/images.md
+    - Lists: reference/lists.md
+    - Tooltips: reference/tooltips.md
+    - Sample Docs 1: reference/sampleDocs.md
+
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:materialx.emoji.twemoji
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
