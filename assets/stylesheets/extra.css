@@ -1,0 +1,9 @@
+.md-ellipsis {
+    font-weight: normal;
+  }
+
+  :root {
+    --md-primary-fg-color:        #0F9D58;
+    --md-primary-fg-color--light: #0F9D58;
+    --md-primary-fg-color--dark:  #0F9D58;
+  }
